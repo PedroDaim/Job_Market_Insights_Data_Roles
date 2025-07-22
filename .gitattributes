@@ -1,0 +1,15 @@
+# Force all .sql files to be detected as SQL
+*.sql linguist-language=SQL
+
+# Optional: Force specific directories (if you have SQL in non-.sql files)
+# Uncomment and modify if needed
+# /scripts/* linguist-language=SQL
+# /data/queries/* linguist-language=SQL
+
+# Optional: Treat text/log files as documentation (not source code)
+*.txt linguist-documentation
+*.log linguist-documentation
+
+# Ignore large data dumps if any
+*.csv linguist-documentation
+*.json linguist-documentation
